@@ -1,6 +1,7 @@
 from flask import Flask, redirect,request,render_template
 import time
 import requests
+"""
 import jwt
 from jwt import PyJWKClient
 
@@ -10,7 +11,7 @@ def get_data_from_token(token,url,kid):
         signing_key = jwks_client.get_signing_key_from_jwt(token)
         data = jwt.decode(token,signing_key.key,algorithms=["RS256"],audience="client1",options={"verify_exp": False})
         return(data)
-
+"""
 
 app=Flask(__name__)
 

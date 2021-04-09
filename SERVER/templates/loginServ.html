@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        {% include "header.html" %}
+      </head>
 
 <body>
-  
-
-    <form action="/login" method='POST'>
+    
+    <div class="ui two column centered grid" style="margin-top: 2em;">
+        <div class="ui center aligned segment" style="width: min-content;" >
+    <form action="/" method='POST' class="ui form" style="width: 500px;">
         <label>username</label>
         <input type="text" name="username" placeholder="username">
         <label>Password</label>
         <input type="password" name="password" placeholder="Password">
-    <buttontype="submit">Submit</button>
+    <button type="submit">Submit</button>
     </form>
+    </div>
+    </div>
 
 </body>
 </html>
